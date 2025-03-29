@@ -71,10 +71,22 @@ This will open the Android project in Android Studio.
 
 ### 4. Build the APK
 
-In Android Studio:
+Pre-req:
+1. JDK 17
+2. Android Studio 
 
+In Android Studio:
 1. Go to Build > Build Bundle(s) / APK(s) > Build APK(s)
 2. The APK will be built and saved to `android/app/build/outputs/apk/debug/app-debug.apk`
+
+Direct: 
+1. > npm install in project root directory
+2. > Run fix-build-gradle-error.sh if required
+3. > Run ./downgrade-capacitor.sh if required
+4. > Run ./build-apk-direct.sh                                           
+
+
+
 
 ## Configure Server Connection (Important)
 
