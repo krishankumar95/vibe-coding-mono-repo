@@ -1,0 +1,38 @@
+{
+  "name": "capacitor-direct-tcp-client",
+  "version": "1.0.0",
+  "description": "Capacitor plugin for direct TCP client connections",
+  "main": "dist/plugin.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc && rollup -c rollup.config.js",
+    "clean": "rimraf ./dist",
+    "watch": "tsc --watch"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@capacitor/core": "^7.1.0"
+  },
+  "peerDependencies": {
+    "@capacitor/core": "^7.0.0"
+  },
+  "files": [
+    "android/src/main/",
+    "android/build.gradle",
+    "dist/",
+    "ios/Plugin/",
+    "CapacitorDirectTcpClient.podspec"
+  ],
+  "keywords": [
+    "capacitor",
+    "plugin",
+    "native"
+  ],
+  "capacitor": {
+    "android": {
+      "src": "android"
+    }
+  }
+}
